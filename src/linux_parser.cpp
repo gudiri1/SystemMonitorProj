@@ -102,6 +102,7 @@ long LinuxParser::UpTime() {
       return /*(int)*/stoi(value);
     }  
   }
+  return 0;
  }
 
 // TODO: Read and return the number of jiffies for the system
@@ -131,6 +132,7 @@ int LinuxParser::TotalProcesses() {
       if (desc == "processes") return stoi(value);
     }  
   }
+  return 0;
 }
 
 // TODO: Read and return the number of running processes
@@ -144,6 +146,7 @@ int LinuxParser::RunningProcesses() {
       if (desc == "procs_running") return stoi(value);
     }  
   }
+  return 0;
  }
 
 // TODO: Read and return the command associated with a process
